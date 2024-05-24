@@ -1,80 +1,29 @@
 <div class="container-xxl">
     <app-navbar-top></app-navbar-top>
-    <body>
-        <div class="container">
-            <!-- Formulario de inicio de sesión -->
-            <div class="login-container" id="login-container">
-                <div class="login-box">
-                    <div class="avatar"></div>
-                    <form>
-                        <div class="input-box">
-                            <input type="text" placeholder="Nombre de Usuario" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Contraseña" required>
-                        </div>
-                        <div class="remember-me">
-                            <input type="checkbox" id="remember">
-                            <label for="remember">Recuérdame</label>
-                        </div>
-                        <div class="forgot-password">
-                            <a href="#">¿Olvidaste tu contraseña?</a>
-                        </div>
-                        <button type="submit">INICIAR SESIÓN</button>
-                    </form>
-                    <div class="create-account">
-                        <a href="#" id="create-account-link">Crear una cuenta</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Formulario de creación de cuenta -->
-            <div class="register-container" id="register-container" style="display: none;">
-                <div class="login-box">
-                    <div class="avatar"></div>
-                    <form>
-                        <div class="input-box">
-                            <input type="text" placeholder="Nombre de Usuario" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="email" placeholder="Correo Electrónico" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Contraseña" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Confirmar Contraseña" required>
-                        </div>
-                        <button type="submit">REGISTRARSE</button>
-                    </form>
-                    <div class="back-to-login">
-                        <a href="#" id="back-to-login-link">Volver a Iniciar Sesión</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="create-account">
-            <a href="#" id="create-account-link">Crear una cuenta</a>
-        </div>
-        
-        <script>
-            // Obtener referencias a los elementos relevantes
-            var loginContainer = document.getElementById('login-container');
-            var registerContainer = document.getElementById('register-container');
-            var createAccountLink = document.getElementById('create-account-link');
-            var backToLoginLink = document.getElementById('back-to-login-link');
-        
-            // Mostrar el formulario de registro y ocultar el de inicio de sesión al hacer clic en "Crear una cuenta"
-            createAccountLink.addEventListener('click', function() {
-                loginContainer.style.display = 'none';
-                registerContainer.style.display = 'block';
-            });
-        
-            // Mostrar el formulario de inicio de sesión y ocultar el de registro al hacer clic en "Volver a Iniciar Sesión"
-            backToLoginLink.addEventListener('click', function() {
-                loginContainer.style.display = 'block';
-                registerContainer.style.display = 'none';
-            });
-        </script>
 
+    <body>
+        <div class="login-container">
+            <div class="login-box">
+                <div class="avatar"></div>
+                <form>
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre de Usuario" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Recuérdame</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit">INICIAR SESIÓN</button>
+                </form>
+                <div class="create-account">
+                    <a href="#">Crear una cuenta</a>
+                </div>
+            </div>
+        </div>
     </body>
