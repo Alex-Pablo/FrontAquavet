@@ -1,3 +1,69 @@
 .container-xxl{
     padding-top: 10px;
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 205px 1fr;
+
+        .PositionFixed{
+            position: fixed;
+            z-index: 10;
+            height: 100vh;
+            width: 200px;
+            padding: 60px 0;
+            .Titule-Menu{
+                text-align: center;
+                font-family: 'PoppinsBold';
+                color: #244583;
+                font-size: 1rem;
+            }
+
+            .navbar-nav {
+                list-style-type: none;
+                margin-top: 8px;
+                .nav-item{
+                    width: 100%;
+                    .nav-link {
+                        display: inline-block;
+                        color: #000000;
+                        text-decoration: none;
+                        font-family: 'PoppinsMedium';
+                        font-size: 0.81rem;
+                        padding: 8px 5px 8px 10px;
+                        width: 100%;
+                        cursor: pointer;
+                        
+                        .wrapper-link{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .iconPata{
+                                width: 30px;
+                            }
+                        }
+                    }
+
+                    .active {
+                        background-color:#003459 ;
+                        color: white ;
+                        border-radius: 8px;
+                    }
+                    
+                    .nav-link:hover {
+                        color: #34414b;
+                    }
+                }
+            }
+        }
+    
+        .wrapper-content{
+            padding: 60px 0;
+            grid-column: 2;
+
+            .wrapper-buscador{
+                display: flex;
+                
+            }
+        }
+    }
 }

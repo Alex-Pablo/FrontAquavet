@@ -1,8 +1,41 @@
 <div class="container-xxl">
     <app-navbar-top></app-navbar-top>
 
-    <div>
-        <p>services works!</p>
+    <div class="wrapper">
+        <div class="PositionFixed">
+
+            <p class="Titule-Menu">Servicios</p>
+
+                <ul class="navbar-nav">
+
+                    <ng-template ngFor let-categoria [ngForOf]="categoriaServicios">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="#" routerLinkActive="active">
+                                <div class="wrapper-link">
+                                    <p>{{categoria.nombre}}</p>
+                                    <img class="iconPata" src="../../../assets/icon/iconPata.svg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ng-template>
+                </ul>
+        </div>
+
+
+        <div class="wrapper-content">
+
+            <div class="wrapper-buscador">
+                <p>Cirugias</p>
+                <div>
+                    <div>
+                        <input type="text">
+                        <img src="../../../assets/icon/iconSearch.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
     
 </div>
