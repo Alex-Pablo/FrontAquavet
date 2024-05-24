@@ -1,10 +1,29 @@
 <div class="container-xxl">
     <app-navbar-top></app-navbar-top>
 
-    <div>
-        <p>loggin</p>
-        <p>Cristian</p>
-    </div>
-</div>
-
-
+    <body>
+        <div class="login-container">
+            <div class="login-box">
+                <div class="avatar"></div>
+                <form>
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre de Usuario" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Recuérdame</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit">INICIAR SESIÓN</button>
+                </form>
+                <div class="create-account">
+                    <a href="#">Crear una cuenta</a>
+                </div>
+            </div>
+        </div>
+    </body>

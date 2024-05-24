@@ -1,45 +1,64 @@
-.wrapper{
+.positionFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+    background-color: #fff; 
+}
+
+.wrapper {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 7px;
     height: 50px;
-    background-color: var(--palette-azulOscuro2);
+    background-color: rgba(196, 214, 236, 0.13);
+}
 
-    .wrapperLogo{
-        color: var(--palette-blanco);
-        font-family: 'PoppinsBold';
-        margin: 0 0 0 10px;
-        font-size: 0.8rem;
-        cursor: pointer;
+.wrapperLogo {
+    color: #000000;
+    font-family: 'PoppinsBold';
+    margin: 0 0 0 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    margin: 0 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.nav-item .nav-link {
+    color: #3C3C3C;
+    text-decoration: none;
+    font-family: 'PoppinsSemibold';
+    font-size: 0.81rem;
+    padding: 0 10px;
+}
+
+.nav-item .nav-link:hover {
+    color: #6c757d;
+}
+
+.nav-item .active {
+    color: #2c3136;
+    font-family: 'PoppinsSemibold';
+    border-bottom: 4px solid transparent;
+    animation: animarborde 2s linear forwards;
+    padding: 0 10px;
+}
+
+@keyframes animarborde {
+    0% {
+        border-bottom-color: transparent;
     }
 
-    .navbar-nav{
-        margin: 0 15px 0 0;
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        list-style-type: none; 
-        .nav-item{
-            .nav-link{
-                color: var(--palette-blanco3);
-                text-decoration: none;
-                font-family: 'PoppinsRegular';
-                font-size: 0.81rem;
-            }
-            .nav-link:hover{
-                color: var(--palette-blanco2);
-                font-size: 0.85rem;
-            }
-            .active{
-                color: var(--palette-blanco);
-                font-family: 'PoppinsMedium';
-            }
-            .nav-link-loggin{
-                text-decoration:underline;
-                font-size: 0.8rem;
-            }
-
-        }
+    100% {
+        border-bottom-color: #00A8E8;
     }
 }

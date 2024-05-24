@@ -2,3 +2,110 @@
     padding-top: 10px;
     height: 100vh;
 }
+
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://thumbs.dreamstime.com/b/veterinary-background-27495910.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.login-container {
+    width: 150%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/*flotante efecto*/
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Caja de login */
+.login-box {
+    background: rgba(7, 187, 112, 0.30);
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(6, 92, 85, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: url('https://th.bing.com/th/id/OIP.2n59-b3v6JzvJGYnYM-XBQHaE8?rs=1&pid=ImgDetMain') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Input box */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Checkbox y link */
+.remember-me, .forgot-password, .create-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #530a8b;
+    margin: 10px 0;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+/* Botón de login */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8d15c8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b0482;
+}
+
+/* Link de crear cuenta */
+.create-account a {
+    color: #530a8b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
