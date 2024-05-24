@@ -1,4 +1,94 @@
-.container-xxl{
-    padding-top: 10px;
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.9145266375b9a82ef41a909509997079?rik=E5xzERssijkXQw&pid=ImgRaw&r=0'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Caja de login */
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: url('https://www.w3schools.com/howto/img_avatar2.png') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* Input box */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Checkbox y link */
+.remember-me, .forgot-password, .create-account, .back-to-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+/* Botón de login */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e54c8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8f94fb;
+}
+
+/* Link de crear cuenta y volver a iniciar sesión */
+.create-account a, .back-to-login a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.create-account a:hover, .back-to-login a:hover {
+    text-decoration: underline;
 }
