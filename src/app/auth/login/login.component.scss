@@ -24,13 +24,25 @@ body {
     padding: 20px;
 }
 
+/*flotante efecto*/
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
 /* Caja de login */
 .login-box {
     background: rgba(7, 187, 112, 0.30);
     border-radius: 30px;
     padding: 40px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(6, 92, 85, );
+    box-shadow: 0 0 10px rgba(6, 92, 85, 0.5);
+    animation: float 3s ease-in-out infinite;
 }
 
 /* Avatar */
