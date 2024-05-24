@@ -3,6 +3,7 @@
     height: 100vh;
 }
 
+
 /* Estilo general */
 body {
   margin: 0;
@@ -30,7 +31,7 @@ body {
   border-radius: 10px;
   padding: 40px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(12, 200, 172, 0.5);
+  box-shadow: 0 0 10px rgba(12, 200, 172, 90);
 }
 
 /* Avatar */
@@ -62,8 +63,8 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  color: #ffffff;
-  margin: 10px 0;
+  color: #680a83;
+  margin: 10px 0px;
 }
 
 .remember-me input {
@@ -89,11 +90,30 @@ button:hover {
 
 /* Link de crear cuenta */
 .create-account a {
-  color: #ffffff;
+  color: #680a83;
   text-decoration: none;
   font-size: 14px;
 }
 
 .create-account a:hover {
   text-decoration: underline;
+}
+
+/* Estilos de la clase para el icono del ojo */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Asegúrate de que el ícono del ojo sea visible en el campo de contraseña */
+.toggle-password i {
+  color: #333; /* Cambia este color según tus preferencias */
+}
+
+/* Asegúrate de que el ícono del ojo sea visible en el campo de contraseña al pasar el ratón sobre él */
+.toggle-password:hover i {
+  color: #555; /* Cambia este color según tus preferencias */
 }
