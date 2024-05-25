@@ -1,8 +1,99 @@
 .container-xxl{
-    padding-top: 10px;
-    height: 100vh;
+  padding-top: 10px;
+  height: 100vh;
+}
 
+/* Estilo general */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-image: url('https://thumbs.dreamstime.com/b/fondo-veterinario-27495910.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+/* Contenedor principal */
+.login-container {
+width: 100%;
+max-width: 400px;
+padding: 20px;
+}
 
+/* Caja de login */
+.login-box {
+background: rgba(4, 253, 157, 0.349);
+border-radius: 10px;
+padding: 40px;
+text-align: center;
+box-shadow: 0 0 10px rgba(12, 200, 172, 90);
+}
 
+/* Avatar */
+.avatar {
+width: 100px;
+height: 100px;
+margin: 0 auto 20px;
+background: url('https://th.bing.com/th/id/R.cf710a05c6e3ec6bd4026c238c99d9d7?rik=4TpDQ75Topzxnw&riu=http%3a%2f%2fstatic.sticker.ly%2fsticker_pack%2f13279e882d3a25af%2fPPB4TK%2f6%2f06b09c85-2072-42b3-afcd-f667897c6c73.png&ehk=t%2btos%2fODUvwhpaTt12bh848oIzY9uJ01v8WDrP3FNpk%3d&risl=&pid=ImgRaw&r=0') no-repeat center;
+background-size: cover;
+border-radius: 50%;
+}
+
+/* Input box */
+.input-box {
+margin-bottom: 20px;
+}
+
+.input-box input {
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 5px;
+outline: none;
+}
+
+/* Checkbox y link */
+.remember-me, .forgot-password, .create-account {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 14px;
+color: #680a83;
+margin: 10px 0;
+}
+
+.remember-me input {
+margin-right: 5px;
+}
+
+/* Botón de login */
+button {
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 5px;
+background-color: #4e54c8;
+color: white;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #8f94fb;
+}
+
+/* Link de crear cuenta */
+.create-account a {
+color: #680a83;
+text-decoration: none;
+font-size: 14px;
+}
+
+.create-account a:hover {
+text-decoration: underline;
 }
