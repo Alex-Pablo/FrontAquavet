@@ -1,9 +1,47 @@
 .container-xxl{
-    padding-top: 10px;
     height: 100vh;
 
-    .titulo{
-        color: red;
-        font-family: 'PoppinsBlack';
+    .contendor-info{
+        display: flex;
+        justify-content: space-between;
+
+        .juntosL{
+            font-size: 55px; 
+            font-family: "PoppinsBold";
+            color: #007EA7;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .parrafo{
+        color: #007EA7;
+        font-size: 33px;
+        font-family: "PoppinsRegular";
+    }
+
+    .imagen{
+        margin-right: 20px; /* Ajusta el margen según sea necesario */
+        width: 50%x; /* Ajusta el tamaño según sea necesario */
+        height: left;
+    }
+
+    .botonServicio{
+        background-color: #003459;
+        color: aliceblue;
+        font-size: 25px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .veterinariaL{
+        color: #007EA7;
+        font-size: 20px;   
+        font-family: "PoppinsBold";
     }
 }

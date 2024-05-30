@@ -1,4 +1,4 @@
 export interface ICategoriaServicios {
-    iD_Categoria:string;
-    nombre?: string;
+    ID_Categoria:string;
+    Nombre?: string;
 }

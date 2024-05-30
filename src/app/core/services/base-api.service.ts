@@ -11,12 +11,20 @@ export class BaseService {
   constructor( private  http: HttpClient ) { }
 
   getAll(service:string) {
-    return this.http.get(`${environment.baseUrlApi}/${service}`)
+    return this.http.get<any>(`${environment.baseUrlApi}/${service}`)
   }
   
 
   getFirstOrDefault(service:string){
     return this.http.get<any>(`${environment.baseUrlApi}/${service}`)
+  }
+
+  getById(service:string, id:string){
+    return this.http.get<any>(`${environment.baseUrlApi}/${service}/${id}`)
+  }
+
+  getbyQuery(service:string, query:string){
+    return this.http.get<any>(`${environment.baseUrlApi}/${service}?query=${query}`)
   }
 
 }
