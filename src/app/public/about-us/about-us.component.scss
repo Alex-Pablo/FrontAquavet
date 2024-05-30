@@ -1,3 +1,72 @@
 .container-xxl{
-    padding-top: 10px;
+    padding-top: 80px;
+
+.contenedorazul{
+    background-color: #5183C0;
+    width: 50%;
+    height: 350px;
+    border-radius: 50px;
+    padding: 30px;   
+    text-align: center; 
+}
+
+.Conocenos {
+    width: 300px;
+    height: 175px;
+    margin: 20px auto 100px ;
+    background-image: url("../../../assets/img/Conocenos.png");
+    background-size: cover;
+    border-radius: 30%;
+    float: center;
+}
+
+.contenedorblanco{
+    background-color: #7ec5ee;
+    width: 50%;
+    height: 325px;
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center ;
+    float: right;
+}
+
+.Mision {
+    width: 140px;
+    height: 140px;
+    margin: 20px auto 100px;
+    background-image: url("../../../assets/img/WhhScopealt.png");
+    background-size: cover;
+    border-radius: 30%;
+    float: center;
+}
+
+.contenedorrosa{
+    background-color: #5183C0;
+    width: 50%;
+    height: 335px;
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center;
+    float:left;
+    margin: 300px auto -20% ;
+}
+
+.Vision {
+    width: 140px;
+    height: 140px;
+    margin: 20px auto 100px;
+    background-image: url("../../../assets/img/Vision.png");
+    background-size: cover;
+    border-radius: 30%;
+    float: center;  
+}
+
+.contenedorgris { 
+    background-color: #5183C0;
+    width: 100%;
+    height: 35px;
+    margin: 650px auto -50px;
+    text-align: center;
+}
+
 }
