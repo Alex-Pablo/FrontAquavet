@@ -8,7 +8,8 @@
 
     .parrafo{
         color: #007EA7;
-        font-size: 40px;
+        font-size: 33px;
+        font-family: "PoppinsRegular";
     }
 
     .imagen{
@@ -25,10 +26,20 @@
         border-radius: 5px;
     }
     .contenedor{
-        width: 100vw;
+        width: 200vw;
         height: 100vh;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }
+    .veterinariaL{
+        color: #007EA7;
+        font-size: 20px;   
+        font-family: "PoppinsBold";
+    }
+    .juntosL{
+        font-size: 55px; 
+        font-family: "PoppinsBold";
+        color: #007EA7;
     }
 }
