@@ -1,3 +1,4 @@
+
 .container-xxl{
   padding-top: 10px;
   height: 100vh;
@@ -24,13 +25,23 @@ max-width: 400px;
 padding: 20px;
 }
 
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
 /* Caja de login */
 .login-box {
-background: rgba(4, 253, 157, 0.349);
+background: rgba(8, 137, 122, 0.295);
 border-radius: 10px;
 padding: 40px;
 text-align: center;
 box-shadow: 0 0 10px rgba(12, 200, 172, 90);
+animation: float 3s  ease-in-out infinite;;
 }
 
 /* Avatar */
@@ -38,7 +49,7 @@ box-shadow: 0 0 10px rgba(12, 200, 172, 90);
 width: 100px;
 height: 100px;
 margin: 0 auto 20px;
-background: url('https://th.bing.com/th/id/R.cf710a05c6e3ec6bd4026c238c99d9d7?rik=4TpDQ75Topzxnw&riu=http%3a%2f%2fstatic.sticker.ly%2fsticker_pack%2f13279e882d3a25af%2fPPB4TK%2f6%2f06b09c85-2072-42b3-afcd-f667897c6c73.png&ehk=t%2btos%2fODUvwhpaTt12bh848oIzY9uJ01v8WDrP3FNpk%3d&risl=&pid=ImgRaw&r=0') no-repeat center;
+background: url('../../../assets/img/Captura\ de\ pantalla\ 2024-05-24\ 182736.png') no-repeat center;
 background-size: cover;
 border-radius: 50%;
 }
