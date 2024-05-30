@@ -75,7 +75,7 @@ export class ServicesComponent implements OnInit{
   }
 
   searchService(query: string){
-      this.SBase.getbyQuey("Services/search", query)
+      this.SBase.getbyQuery("Services/search", query)
         .subscribe(data => {
           if (data.isSucess) {
             this.serviciosQuery = data.value;            
