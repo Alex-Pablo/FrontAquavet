@@ -11,25 +11,11 @@ import { IEmpresa } from '../../core/models/IEmpresa.interface';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent implements OnInit {
-
-  constructor(private SBase: BaseService){}
-
-  public empresa?: IEmpresa
-
-  ngOnInit(): void {
-      this.getFirstOrDefaultEmpresa()
-  }
+export class ContactComponent  {
 
 
-  getFirstOrDefaultEmpresa(){
-    this.SBase.getFirstOrDefault("Company/Company")
-      .subscribe(data =>{
-        if (data.isSucess) {
-          this.empresa = data.value          
-        }
-      })
-  }
+
+  
   
 
 }
