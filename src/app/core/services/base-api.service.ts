@@ -23,7 +23,7 @@ export class BaseService {
     return this.http.get<any>(`${environment.baseUrlApi}/${service}/${id}`)
   }
 
-  getbyQuey(service:string, query:string){
+  getbyQuery(service:string, query:string){
     return this.http.get<any>(`${environment.baseUrlApi}/${service}?query=${query}`)
   }
 
