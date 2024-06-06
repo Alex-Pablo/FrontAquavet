@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarTopComponent } from '../../shared/components/auth/navbar-top/navbar-top.component';
 import { ReactiveFormsModule , FormBuilder, Validators} from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { LoaderComponent } from '../../shared/components/loader/loader.component';
 import Swal from 'sweetalert2';
 import { AuthService } from '../../core/services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -18,11 +19,20 @@ import { AuthService } from '../../core/services/auth/auth.service';
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private sAuth: AuthService){}
+  constructor(private formBuilder: FormBuilder, 
+              private router: Router,
+              private sAuth: AuthService){}
 
   stateLogin:boolean = false;
+
+
+  ngOnInit(): void {
+    if (this.sAuth.isAuthenticated()) {
+      this.router.navigate(['/catalogo']);
+    }
+  }
 
   loginForm =  this.formBuilder.group({
     email : ['', [Validators.required, Validators.email]],
@@ -37,20 +47,35 @@ export class LoginComponent {
       return
     }
 
+    const email = this.loginForm.value.email
+    const password = this.loginForm.value.password
+
     Swal.fire({
       title:'',
       text: 'Espere por favor...'
     })
     Swal.showLoading();
 
-    this.sAuth.login("hola", "123456")
+    this.sAuth.login( email!,password!)
       .subscribe((data) => {
         console.log(data);
-        Swal.fire({
-          title: "Iniciando session",
-          text: "Autentificacion correcta",
-          timer: 3000
-        })
+        
+        if (data.isSucess) {
+          Swal.fire({
+            icon: "success",
+            title: "",
+            text: "Accesiendo al sistema",
+            timer: 1000
+          })
+          this.router.navigate(['/catalogo'])
+        }else{
+          Swal.fire({
+            icon: "error",
+            title: "",
+            text: "Correo o contraseña incorrecta",
+            timer: 3000
+          }) 
+        }
       })
   }
 

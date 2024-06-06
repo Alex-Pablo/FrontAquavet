@@ -1,0 +1,80 @@
+.positionFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+    background-color: #fff; 
+
+    .wrapper {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 7px;
+        height: 50px;
+        background-color: #005B79;
+
+
+        .wrapperLogo {
+            color: #F5F8FF;
+            font-family: 'PoppinsBold';
+            margin: 0 0 0 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+            list-style-type: none;
+            align-items: center;
+
+            .wrapper-perfil{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+
+                .wrapper-img{
+                    .img{
+                        width: 40px;
+                    }
+                }
+
+                .wrapper-info{
+                    .name{
+                        color: white;
+                    }
+                    .role{
+                        color: #b4b8c0;
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+
+            .nav-item{
+                color: rgb(216, 213, 219);
+                font-size: 0.8rem;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+@keyframes animarborde {
+    0% {
+        border-bottom-color: transparent;
+    }
+
+    100% {
+        border-bottom-color: #0aadee;
+    }
+}
