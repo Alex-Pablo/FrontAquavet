@@ -12,7 +12,6 @@ export const routes: Routes = [
     },
     {
         path:'catalogo',
-        loadChildren: () => import('./private/private.routes').then( m => m.PUBLIC_ROUTES),
-        canActivate:[authGuard]
+        loadChildren: () => import('./private/private.routes').then( m => m.PRIVATE_ROUTES),
     }
 ];

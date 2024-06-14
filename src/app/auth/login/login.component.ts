@@ -58,7 +58,6 @@ export class LoginComponent implements OnInit {
 
     this.sAuth.login( email!,password!)
       .subscribe((data) => {
-        console.log(data);
         
         if (data.isSucess) {
           Swal.fire({

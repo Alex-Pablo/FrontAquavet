@@ -2,7 +2,6 @@
     <nav class="wrapper container-xxl">
 
         <div class="wrapperLogo">
-            <p routerLink="/" routerLinkActive="active">aquavet</p>
         </div>
 
 
@@ -13,8 +12,8 @@
                 </div>
 
                 <div class="wrapper-info">
-                    <p class="name">Alex Pablo</p>
-                    <p class="role">Administrador</p>
+                    <p class="name">{{userProfile?.primerNombre}} {{userProfile?.primerApellido}}</p>
+                    <p class="role">{{userProfile?.puesto}}</p>
                 </div>
             </li>
 

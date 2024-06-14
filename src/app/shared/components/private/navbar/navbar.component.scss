@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999; 
+    z-index: 30; 
     background-color: #fff; 
 
     .wrapper {
@@ -13,7 +13,7 @@
         align-items: center;
         border-radius: 7px;
         height: 50px;
-        background-color: #005B79;
+        background-color: #ffffff;
 
 
         .wrapperLogo {
@@ -39,25 +39,32 @@
 
                 .wrapper-img{
                     .img{
-                        width: 40px;
+                        width:35px;
+                        opacity: 0.5;
                     }
                 }
 
                 .wrapper-info{
                     .name{
-                        color: white;
+                        color: #3C3C3C;
+                        font-family: 'PoppinsSemibold';
+                        font-size: 0.78rem;
                     }
                     .role{
-                        color: #b4b8c0;
+                        margin-top: -7px;
+                        color: #3C3C3C;
                         font-size: 0.75rem;
+                        font-family: 'PoppinsMedium';
                     }
                 }
             }
 
             .nav-item{
-                color: rgb(216, 213, 219);
+                color: #000000;
                 font-size: 0.8rem;
                 cursor: pointer;
+                font-family: 'PoppinsMedium';
+
             }
         }
         
