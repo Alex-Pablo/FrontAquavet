@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    baseUrlApi: process.env['baseUrlApi']
+    baseUrlApi:'https://coreaquavet20240613235655.azurewebsites.net'
 };
