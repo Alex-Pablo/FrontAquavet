@@ -1,9 +1,17 @@
 .container-xxl{
-    padding-top: 10px;
     height: 100vh;
 
-    .contenedor{
+    .contendor-info{
         display: flex;
+        justify-content: space-between;
+
+        .juntosL{
+            font-size: 55px; 
+            font-family: "PoppinsBold";
+            color: #007EA7;
+            display: flex;
+            align-items: center;
+        }
     }
 
     .parrafo{
@@ -26,20 +34,19 @@
         border-radius: 5px;
     }
     .contenedor{
-        width: 200vw;
-        height: 100vh;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
     }
     .veterinariaL{
         color: #007EA7;
         font-size: 20px;   
         font-family: "PoppinsBold";
     }
-    .juntosL{
-        font-size: 55px; 
-        font-family: "PoppinsBold";
-        color: #007EA7;
-    }
 }
+
+
+
+
+
