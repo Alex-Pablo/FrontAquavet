@@ -4,45 +4,70 @@
     .contendor-info{
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
-        .juntosL{
-            font-size: 55px; 
-            font-family: "PoppinsBold";
+        .Wrapperparrafo{
             color: #007EA7;
+            font-size: 33px;
+            font-family: "PoppinsRegular";
+            width: 100%;
+            .veterinariaL{
+                color: #007EA7;
+                font-size: 14px;   
+                font-family: "PoppinsBold";
+            }
+            .juntosL{
+                font-size: 55px; 
+                font-family: "PoppinsBold";
+                display: flex;
+                align-items: center;
+                .icon-pet{
+                    width: 60px;
+                }
+            }
+            .parrafo{
+                font-size: 1.5rem;
+            }
+        }
+
+        .imagen{
             display: flex;
-            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+            .img-back{
+                width: 90%;
+            }
+        }
+
+
+    }
+
+    .wrapper-btn{
+        margin-top: 20px;
+        .botonServicio{
+            background-color: #1f76b4;
+            color: aliceblue;
+            padding: 9px 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            font-family: "PoppinsSemiBold";
+            text-decoration: none;
+            display: inline-block;
         }
     }
 
-    .parrafo{
-        color: #007EA7;
-        font-size: 33px;
-        font-family: "PoppinsRegular";
-    }
+    .botonServicio:hover{
+        background-color: #084977;
+        transform: scale(1.03);
 
-    .imagen{
-        margin-right: 20px; /* Ajusta el margen según sea necesario */
-        width: 50%x; /* Ajusta el tamaño según sea necesario */
-        height: left;
-    }
-
-    .botonServicio{
-        background-color: #003459;
-        color: aliceblue;
-        font-size: 25px;
-        padding: 5px 10px;
-        border-radius: 5px;
     }
     .contenedor{
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-    }
-    .veterinariaL{
-        color: #007EA7;
-        font-size: 20px;   
-        font-family: "PoppinsBold";
     }
 }
 
