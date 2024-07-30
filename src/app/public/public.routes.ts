@@ -8,6 +8,7 @@ export const PUBLIC_ROUTES: Routes = [
   {
     path: '',
     component: HomeComponent,
+    pathMatch:'full'
   },
   {
     path: 'services',
@@ -23,6 +24,6 @@ export const PUBLIC_ROUTES: Routes = [
   },
   {
     path:'**',
-    redirectTo: '', pathMatch: 'full',
+    redirectTo: '',
   }
 ];
