@@ -21,9 +21,5 @@ export const PUBLIC_ROUTES: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-  },
-  {
-    path:'**',
-    redirectTo: '', pathMatch: 'full',
   }
 ];
