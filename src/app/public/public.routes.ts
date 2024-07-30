@@ -24,6 +24,6 @@ export const PUBLIC_ROUTES: Routes = [
   },
   {
     path:'**',
-    redirectTo: '',
+    redirectTo: '', pathMatch: 'full',
   }
 ];
